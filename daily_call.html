@@ -1,0 +1,354 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="noindex, nofollow" />
+    <title>Corbridge</title>	  
+	<!--
+	<link rel="icon" type="image/png" href="images/cambridge-favicon.png" />   
+	-->
+
+	<link rel="icon" type="image/png" href="public/ed/images/cambridge-favicon.png" />   
+	<link href="public/ed/css/bootstrap.min.css" rel="stylesheet">
+	<link href="public/ed/css/owl.carousel.min.css" rel="stylesheet">	  
+	<link href="public/ed/css/owl.theme.default.min.css" rel="stylesheet">  
+	<link href="public/ed/css/fontawesome-all.min.css" rel="stylesheet">
+	<link href="public/ed/css/animate.css" rel="stylesheet">	  
+    <link href="public/ed/css/custom.css" rel="stylesheet">
+	<link href="/public/ed/css/xtian_custom.css" rel="stylesheet">
+
+	<script src="public/ed/js/jquery-3.4.1.min.js"></script>
+	<script src="public/ed/js/popper.min.js" ></script>
+	<script src="public/ed/js/bootstrap.min.js" ></script>
+    <script src="public/ed/js/owl.carousel.min.js"></script>  
+    <script src="public/ed/js/smooth-scroll.js"></script>	
+	<script src="public/ed/js/wow.min.js" ></script>	
+	<script src="public/ed/js/custom.js"></script>	
+	
+
+	<!-- xtian 01-26-2021 -->
+	<script  src="public/jquery/signature-pad.js"  ></script>
+	<script  src="public/js/jquery.dataTables.min.js"  ></script>
+
+
+  </head>
+  <body>
+  <header>
+	  <div class="container-fluid">
+		 <div class="row">
+			 <div class="col-md-2 logo">
+				<i id="mmenu" class="fas fa-bars"></i> 
+				<a href="/" data-scroll><img alt="" src="public/ed/images/corbridge-logo.jpg" width="150"></a>
+			 </div>
+			 <nav id="hright" class="col-md-10">			 
+				 <ul class="nav">
+
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="">
+                            <span class="col-icon">
+                            <i class="fas fa-tachometer-alt"></i>
+                            </span>
+                            <span class="col-text">
+                                Dashboard
+                            </span>
+                         </a>
+                     </li>		
+				  
+
+
+
+				   <li class="nav-item">
+					  <a class="nav-link " href="">
+						  <span class="col-icon">
+						  	<i class="far fa-calendar-alt"></i>
+						  </span>
+						  <span class="col-text">
+							  Monthly Call Plan
+						  </span>
+					   </a>
+				   </li>
+
+
+				    <li class="nav-item">
+					  <a class="nav-link " href="daily_call.html">
+						  <span class="col-icon">
+						  	<i class="fas fa-phone"></i>
+						  </span>
+						  <span class="col-text">
+							  Daily Calls
+						  </span>
+					   </a>
+				   </li>					 
+				   
+
+
+					
+				</ul>
+			 </nav>	
+			 
+		</div>
+	  </div>
+  </header> 	  
+<div id="wrapper">	  
+	  	  
+ 		<section id="topheading" class="col-pads col-pads-nb">
+
+			<div class="container-fluid">
+
+				<div class="row">
+					<div class="col-md-6">
+						<div id="dashtitle">Territory Manager Dasboard</div>
+						<h1 id="tabtitle">Dashboard</h1>
+						<input type='text' id='user_id' />
+					</div>
+					
+					<div class="col-md-6 text-right">
+						<div class="row profilehead">
+						    <div class="col-md-10">
+							Welcome, <span id="pname">Jay Madayag</span><br>
+                                <div id="compname">Corbridge Group Phil’s., Inc</div>
+    							<div id="branchname">Tondo/Binondo - L2</div>
+								<div id="mode">(Development)</div>
+							</div>
+							<div class="col-md-2"><a href="index.html"><i class="fas fa-power-off text-dblue"></i></a></div>							
+                            </div>
+						</div>
+					</div>
+				</div>
+				
+				
+
+			</div>
+			
+		</section>	
+<section id="tabwrap" class="section bg-lblue">
+			<div class="container">
+				<div class="row">
+					
+					<div class="col-12">
+						
+						
+						
+						<div class="card col-pads subnavs">
+							    <div class="row">
+							        <div class="col-12">
+            						   <h5 id="tabinnertitle">Tuesday 11th May 2021</h5>
+            					    </div>
+                                    <div class="col-12">
+
+													    <div class="row row-top">
+													        <div class="col-md-8"><h2 class="rowttitle">Daily Calls</h2></div>
+													        <div class="col-md-4 text-right">
+													            <input type="text" class="form-control" id="search"  onchange="load_client()" placeholder="Search"/>
+													        </div>
+													    </div>                                        
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">										
+                                        <div style="padding:20px;border-right: 1px solid #e2e2e2;">
+											<div style="text-align:center;width:100%;margin:5px;">
+													<button class="btn btn-custom bg-dblue text-white" onclick="load_client()">Refresh</button>
+											</div>
+											<br>
+											<br>	
+
+											
+											<label>DOCTORS FOR TODAY</label>
+											<div id="client_container">	
+											
+                                            
+											</div>
+
+                                            
+                                              
+                                            
+                                         </div>               
+                                    </div>
+
+                                    <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                                          <div style="padding:10px;" id="plot_dtl_container">
+
+
+
+                                          </div>              
+                                    </div>                
+
+
+							
+                                </div>
+						</div>						
+					</div>
+
+				</div>
+			</div>
+
+		</section>
+<!-- Modal bg-white -->
+<div class="modal" id="modal_form" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content" style='border:1px solid black;'>
+      <div class="modal-header" style='background-color:#3085C5;color:#ffffff;'>
+        <h5 class="modal-title" id="exampleModalLabel">Message Us</h5>
+        <button type="button" onclick='close_modal()' class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style='background-color:#EDF7FF;' id='modal_container'>
+								
+      </div>
+    </div>
+  </div>
+</div>	
+
+  
+    
+
+
+
+
+
+  
+<script>
+	$(document).ready(function(){
+		$('#user_id').val(localStorage.getItem("user_id"));
+		//load_client();
+		//load_tm_line_item();
+		//load_visual();
+		mobile_sync()
+	});
+	
+	
+	function load_client(){
+	
+		var user_id = localStorage.getItem("user_id");
+		var location_district_id = localStorage.getItem("location_district_id");
+	
+		var param = 
+            {
+                'user_id' : user_id,
+				'location_district_id' :location_district_id
+				
+                
+            }
+			
+		$.get("https:\\\\corbridge.12symphony.com\\index.php\\Api\\get_plot_today\\", param, 
+			function(data) {
+				console.log(data);
+			
+				localStorage.setItem("plot_list", JSON.stringify(data['plot_list']));
+				
+				console.log(localStorage.getItem("plot_list"));
+			
+				load_plot_list();
+				
+				
+				
+				
+		}, 'json');
+		
+	
+	}
+	
+	
+	function load_plot_list(){
+	
+		var html = "";
+	
+		JSON.parse(localStorage.getItem("plot_list")).forEach((number, index) => {
+					console.log('Index: ' + index + ' Value: ' + number.doctor_name);
+					
+				html = html + "<div onclick='view_plot_dtl(" + number.plot_dtl_id + ")' onmouseover=\"this.style.color='orange';\" onmouseout=\"this.style.color='';\" style='border-bottom: 1px solid white; margin-bottom: 8px; cursor: pointer; font-size: 14px;'> " +
+									" <i class='fas fa-check-circle' style='color:green'></i> " +       
+									"&nbsp; " + number.doctor_name +
+							"</div>";
+		});
+		
+		$('#client_container').html(html);
+	
+	}
+	
+	
+	function load_tm_line_item(){
+	
+		var user_id = localStorage.getItem("user_id");
+		var location_district_id = localStorage.getItem("location_district_id");
+	
+		var param = 
+            {
+                'user_id' : user_id
+				
+				
+                
+            }
+			
+		$.get("https:\\\\corbridge.12symphony.com\\index.php\\Api\\get_line\\", param, 
+			function(data) {
+				console.log(data);
+				
+				var sst = JSON.stringify(data);
+				alert(sst);
+				
+				
+				
+				
+		}, 'json');
+	
+	}
+	
+	
+	function load_visual(){
+	
+		var user_id = localStorage.getItem("user_id");
+	
+		var param = 
+            {
+                'user_id' : user_id
+			}
+			
+		$.get("https:\\\\corbridge.12symphony.com\\index.php\\Api\\get_visual_aids\\", param, 
+			function(data) {
+				console.log(data);
+				
+				var sst = JSON.stringify(data);
+				alert(sst);
+				
+		}, 'json');
+	
+	}
+	
+	
+	function mobile_sync(){
+	
+		
+	
+		var user_id = localStorage.getItem("user_id");
+		
+		alert(user_id);
+	
+		var param = 
+            {
+                'user_id' : user_id,
+				'data' : "{call_hdr : 'call_hdr'}"
+				
+			}
+			
+		$.get("https:\\\\corbridge.12symphony.com\\index.php\\Api\\mobile_sync\\", param, 
+			function(data) {
+				console.log(data);
+				
+				var sst = JSON.stringify(data);
+				alert(sst);
+				
+		}, 'json');
+	
+	}
+
+
+
+
+</script>	
+</body>
+</html>

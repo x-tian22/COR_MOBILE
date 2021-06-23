@@ -1,0 +1,276 @@
+body{
+  background: linear-gradient(to top, rgba(255,255,255,0) 20%,
+              rgba(255,255,255,1)), url("../image/background.jpg");
+
+              font-size: calc(0.75em + .3vmin);
+ 
+  /* background-image:  url("../image/background.jpg"); */
+
+}
+
+
+.x_panel{
+
+  background-color:#CCCCCC;
+  width:100%;
+}
+
+.x_panel_hdr{
+  background-color:#003366;
+  width:100%;
+  height:100px;
+  
+  color:#ffffff;
+
+}
+
+.hdr_label{
+  padding:50px;
+}
+
+.x_panel_login_cont{
+  padding:50px;
+
+
+}
+
+
+
+
+.x_panel_cont{
+  padding:30px;
+
+
+}
+
+.x_panel_cont button{
+  cursor:pointer;
+
+
+}
+
+ .x_panel_cont table{
+
+width:100%;
+
+}
+
+.x_container th{
+  background-color:#003366; 
+  color:#ffffff;
+  border:1px solid black;
+  text-align:center;
+}
+
+.x_container  td{
+  
+  color:#003366; 
+  border:1px solid black;
+  padding:5px;
+
+}
+
+
+
+/* input[type='checkbox'] {
+-webkit-appearance: none !important;
+
+} */
+
+
+a{
+
+  color:green !important;
+}
+
+
+.x_panel_cont input, select{
+  padding:5px;
+
+
+} 
+
+
+.x_panel_login_cont label{
+
+  color:#003366;
+  font-size:20px;
+  padding-top:5px;
+  
+}
+
+.x_panel_login_cont input{
+  background-color: #ffffff;
+
+
+  
+}
+
+.x_panel_login_cont button{
+  width:100%;
+  padding:5px;
+  cursor:pointer;
+}
+
+.x_container{
+
+  width:90%;
+  margin:0 auto;
+}
+
+.x_menu{
+
+  width:100%;
+  /* background-color: #FBE5D6; */
+  background-color:#ffffff;
+  /* border:2px solid #F37825; */
+  border:2px solid #266A9E;
+  /* text-align:center; */
+  border-radius: 10px;
+  padding:20px;
+  
+
+}
+
+.collapsible{
+  width:80%;
+  margin:5px;
+  /* background-color: #F37825 ; */
+  background-color: #266A9E;
+  color:#ffffff;
+  border-radius: 10px;
+  cursor:pointer;
+  height: 50px;
+
+}
+
+.x_menu_but{
+width:80%;
+margin:5px;
+/* background-color: #F37825 ;  */
+background-color: #266A9E;
+color:#ffffff;
+border-radius: 10px;
+cursor:pointer;
+height: 50px;
+font-weight:bold;
+
+}
+
+
+.sub_but{
+width:80%;
+cursor:pointer;   
+border-radius: 10px;
+padding:8px;
+margin:5px;
+/* background-color:#F5AF92; */
+background-color:#266A9E;
+color:yellow;
+}
+
+/* collapse */
+
+
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+ 
+}
+
+
+
+/*tabs css*/
+.tab {
+  overflow: hidden;
+  border: 1px solid#003366;
+  background-color: #f1f1f1;
+  
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tablinks{
+  color: #003366;
+
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  color: #003366;
+
+}
+
+#logo_cont{
+  border:2px solid #266A9E; 
+  
+  border-radius: 10px;
+  padding:3px;
+
+}
+
+#logo{
+  width: 100%;
+  height:auto;
+  /* background-image: url("../image/logo.jpg");
+ 
+  border:2px solid #266A9E; 
+  height:152px;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-size: cover; */
+
+}
+
+
+.x_ord_buts{
+  
+ 
+  padding:10px;
+  border-radius:5px;
+  cursor:pointer;
+
+
+}
+
+.x_menu_buts{
+  width:80%;
+  margin:5px;
+  /* background-color: #F37825 ; */
+  background-color: #266A9E;
+  color:#ffffff;
+  border-radius: 10px;
+  cursor:pointer;
+  height: 50px;
+
+}
+
+
+
+

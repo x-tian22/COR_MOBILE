@@ -1,0 +1,289 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="noindex, nofollow" />
+    <title>Corbridge</title>	  
+	<!--
+	<link rel="icon" type="image/png" href="images/cambridge-favicon.png" />   
+	-->
+
+	<link rel="icon" type="image/png" href="public/ed/images/cambridge-favicon.png" />   
+	<link href="public/ed/css/bootstrap.min.css" rel="stylesheet">
+	<link href="public/ed/css/owl.carousel.min.css" rel="stylesheet">	  
+	<link href="public/ed/css/owl.theme.default.min.css" rel="stylesheet">  
+	<link href="public/ed/css/fontawesome-all.min.css" rel="stylesheet">
+	<link href="public/ed/css/animate.css" rel="stylesheet">	  
+    <link href="public/ed/css/custom.css" rel="stylesheet">
+	<link href="/public/ed/css/xtian_custom.css" rel="stylesheet">
+
+	<script src="public/ed/js/jquery-3.4.1.min.js"></script>
+	<script src="public/ed/js/popper.min.js" ></script>
+	<script src="public/ed/js/bootstrap.min.js" ></script>
+    <script src="public/ed/js/owl.carousel.min.js"></script>  
+    <script src="public/ed/js/smooth-scroll.js"></script>	
+	<script src="public/ed/js/wow.min.js" ></script>	
+	<script src="public/ed/js/custom.js"></script>	
+	
+
+	<!-- xtian 01-26-2021 -->
+	<script  src="public/jquery/signature-pad.js"  ></script>
+	<script  src="public/js/jquery.dataTables.min.js"  ></script>
+
+
+  </head>
+  <body>
+  <header>
+	  <div class="container-fluid">
+		 <div class="row">
+			 <div class="col-md-2 logo">
+				<i id="mmenu" class="fas fa-bars"></i> 
+				<a href="/" data-scroll><img alt="" src="public/ed/images/corbridge-logo.jpg" width="150"></a>
+			 </div>
+			 <nav id="hright" class="col-md-10">			 
+				 <ul class="nav">
+
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="">
+                            <span class="col-icon">
+                            <i class="fas fa-tachometer-alt"></i>
+                            </span>
+                            <span class="col-text">
+                                Dashboard
+                            </span>
+                         </a>
+                     </li>		
+				  
+
+
+
+				   <li class="nav-item">
+					  <a class="nav-link " href="">
+						  <span class="col-icon">
+						  	<i class="far fa-calendar-alt"></i>
+						  </span>
+						  <span class="col-text">
+							  Monthly Call Plan
+						  </span>
+					   </a>
+				   </li>
+
+
+				    <li class="nav-item">
+					  <a class="nav-link " href="daily_call.html">
+						  <span class="col-icon">
+						  	<i class="fas fa-phone"></i>
+						  </span>
+						  <span class="col-text">
+							  Daily Calls
+						  </span>
+					   </a>
+				   </li>					 
+				   
+
+
+					
+				</ul>
+			 </nav>	
+			 
+		</div>
+	  </div>
+  </header> 	  
+<div id="wrapper">	  
+	  	  
+ 		<section id="topheading" class="col-pads col-pads-nb">
+
+			<div class="container-fluid">
+
+				<div class="row">
+					<div class="col-md-6">
+						<div id="dashtitle">Territory Manager Dasboard</div>
+						<h1 id="tabtitle">Dashboard</h1>
+						<input type='text' id='user_id' />
+					</div>
+					
+					<div class="col-md-6 text-right">
+						<div class="row profilehead">
+						    <div class="col-md-10">
+							Welcome, <span id="pname">Jay Madayag</span><br>
+                                <div id="compname">Corbridge Group Phil’s., Inc</div>
+    							<div id="branchname">Tondo/Binondo - L2</div>
+								<div id="mode">(Development)</div>
+							</div>
+							<div class="col-md-2"><a href="index.html"><i class="fas fa-power-off text-dblue"></i></a></div>							
+                            </div>
+						</div>
+					</div>
+				</div>
+				
+				
+
+			</div>
+			
+		</section>	
+<section id="tabwrap" class="section bg-lblue">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="card col-pads subnavs">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h5 id="tabinnertitle">Dashboard</h5>
+                                        </div>
+                                        <div class="col-12">
+                                            <h2 class="rowttitle">Overview</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-5 text-right">
+                                    <div class="row">
+                                        <div class="col">
+                                            <select name="year" id="year" class="form-control"></select>
+                                        </div>
+                                        <div class="col">
+                                            <select name="month" id="month" class="form-control"></select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row-dcard"> 
+                        <div class="col-md-4">
+                            <div class="dash-card bg-lblue">
+                                <div class="card-title-sm">
+                                    Total MD
+                                </div>
+                                <div class="card-data text-blue">
+                                    <span id="txdata">22</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="dash-card bg-lblue planned_calls">
+                                <div class="card-title-sm">
+                                    Planned Calls
+                                </div>
+                                <div class="card-data text-blue">
+                                    <span id="txdata">24</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="dash-card bg-lblue total_actual_calls">
+                                <div class="card-title-sm">
+                                    Total Actual Calls
+                                </div>
+                                <div class="card-data text-blue">
+                                    <span id="txdata">16</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row-dcard">
+                        <div class="col-md-4">
+                            <div class="dash-card bg-lred rate">
+                                <div class="card-title-sm">
+                                    Call Rate
+                                </div>
+                                <div class="card-nums">
+                                                                        <span class="wnum text-lred">66                                        <sup style="font-size: 18px;margin-left: -6px;">.67%</sup>
+                                    </span>
+                                    <span class="float-right">
+                                    <span class="ac text-lred">16</span> / 
+                                    <span class="pc">24</span>
+                                    </span>
+                                </div>
+                                <div class="card-graph">
+                                    <canvas id="ovchart_rate" width="100%" height="50"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="dash-card bg-cyan reach">
+                                <div class="card-title-sm">
+                                Call Reach
+                                </div>
+                                <div class="card-nums">
+                                                                        <span class="wnum text-cyan">
+                                        72                                        <sup style="font-size: 18px;margin-left: -6px;">.73%</sup>
+                                    </span>
+                                    <span class="float-right">
+                                        <span class="ac text-cyan">16</span> / 
+                                        <span class="pc">22</span>
+                                    </span>
+                                </div>
+                                <div class="card-graph">
+                                    <canvas id="ovchart_reach" width="100%" height="50"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="dash-card bg-mlblue freq">
+                                <div class="card-title-sm">
+                                    Call Frequency
+                                </div>
+                                <div class="card-nums">
+                                                                        <span class="wnum text-blue">
+                                        18                                        <sup style="font-size: 18px;margin-left: -6px;">.18%</sup>
+                                    </span>
+                                    <span class="float-right">
+                                        <span class="ac text-blue">4</span> / 
+                                        <span class="pc">22</span>
+                                    </span>
+                                </div>
+                                <div class="card-graph">
+                                    <canvas id="ovchart_freq" width="100%" height="50"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Modal bg-white -->
+<div class="modal" id="modal_form" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content" style='border:1px solid black;'>
+      <div class="modal-header" style='background-color:#3085C5;color:#ffffff;'>
+        <h5 class="modal-title" id="exampleModalLabel">Message Us</h5>
+        <button type="button" onclick='close_modal()' class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style='background-color:#EDF7FF;' id='modal_container'>
+								
+      </div>
+    </div>
+  </div>
+</div>	
+
+  
+    
+
+
+
+
+
+  
+<script>
+$(document).ready(function(){
+	$('#user_id').val(localStorage.getItem("user_id"));
+});
+
+
+
+
+</script>	
+</body>
+</html>

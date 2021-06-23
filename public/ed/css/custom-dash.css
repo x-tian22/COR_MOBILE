@@ -1,0 +1,284 @@
+body {
+	background: #f2f2f2;
+}
+
+header {
+	display: none;
+}
+
+nav a.nav-link,.left-menu .bottom-cont a {
+	font-family: 'proxima_nova_bold';
+	color: #333333;
+	font-size: 15px;
+	text-transform: uppercase;
+}
+
+nav a.nav-link:hover,nav a.nav-link.active, .left-menu .bottom-cont a {
+	color: #ed1b36;	
+}
+
+.left-menu .bottom-cont {
+    position: absolute;
+	bottom: 0px;
+    width: 100%;
+    left: 0;
+}
+
+.logo-cont i#mmenu,.logo-cont i#dmmenu {
+	display: none;
+}
+
+header i#dmmenu {
+    font-size: 30px;
+    padding: 10px;
+    display: none;
+    position: fixed;
+    right: 15px;
+    color: #333333;
+    top: 20px;
+}
+
+img#profimg {
+    width: 60px;
+    height: 60px;
+    background: #eeeeee;
+    border-radius: 50%;
+    border: 3px solid #eeeeee;
+}
+
+.prof-cont {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.prof-cont #profname {
+    font-family: 'proxima_nova_bold';
+    font-size: 18px;
+}
+
+.prof-cont a {
+    font-family: 'proxima_nova_bold';
+    color: #004269;
+}
+
+nav.dmenu {
+    padding-top: 10px;
+}
+
+nav.dmenu li {
+    margin-top: 10px;
+}
+
+.left-menu nav li a i {
+    margin-right: 10px;
+}
+
+.card-top {
+    border-radius: 0px 0px 20px 20px;
+	margin-bottom: 20px;
+	padding: 20px 30px 20px 30px;
+    border: 0px;	
+}
+
+.col-pads-dash {
+	padding: 30px 30px 30px 30px;	
+	margin-bottom: 20px;
+}
+
+#headtitle h1 {
+    font-size: 19px;
+	color: #004269;
+}
+
+#headtitle h2 {
+    font-size: 27px;
+}
+
+#headtitle .form-control {
+    padding: .375rem .75rem;
+    margin-top: 20px;
+}
+
+#reportrange {
+    background: #fff;
+    cursor: pointer;
+    padding: .375rem .75rem;
+    border: 1px solid #ced4da;
+    width: 70%;
+    border-radius: 30px;
+	float: right;
+}
+
+#reportrange i.fa-chevron-down {
+    font-size: 10px;
+}
+
+.dash-wrap h4 {
+    font-size: 19px;
+}
+
+.fignum {
+    font-family: 'proxima_nova_bold';
+    font-size: 40px;
+}
+
+span.cursign {
+    font-size: 15px;
+}
+
+.bottom-cont a.nav-link {
+    padding-left: 36px;
+    margin-bottom: 10px;
+}
+
+.left-menu {
+    width: 25%;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.dash-wrap table {
+    margin-top: 20px;
+}
+
+.actioncol i {
+	margin-right: 8px;
+}
+
+.actioni {
+	color: #233c8d;
+}
+
+.actionx,.actionx:hover {
+	color: #ed1b36;
+}
+
+#accountimg {
+	margin-bottom: 20px;
+	position: relative;
+}
+
+#accountimg img {
+    border-radius: 50%;
+    border: 5px solid #eeeeee;
+    width: 200px;
+    height: 200px;
+}
+
+#accountname {
+    font-family: 'proxima_nova_bold';	
+}
+
+.row-mid {
+	margin-top: 40px;
+}
+
+.img-badge {
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+    font-size: 20px;
+    border-radius: 55%;
+    background: #ffd400;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    color: #333333;
+    text-align: center;
+    cursor: pointer;
+}
+
+#changepass {
+	width: 180px;
+	margin-top: 20px;
+}
+
+
+@media (min-width: 1440px) {
+
+}
+
+@media (min-width: 1920px) {
+
+}
+
+@media (max-width: 1366px) {
+
+	
+}
+
+@media (max-width: 1150px) {
+
+	
+}
+
+@media (max-width: 991px) {
+	
+	header,header i#dmmenu {
+		display: block;
+	}	
+	
+	.right-col {
+		margin-top: 100px;
+	}
+	
+	.right-col .card-top {
+		border-radius: 20px;
+	}
+	
+	.left-menu {
+		z-index: 2;
+		height: 100%;
+		left: auto;
+		right: -100%;
+		-webkit-transition: 0.3s;
+		-moz-transition: 0.3s;
+		transition: 0.3s;		
+	}
+	
+	.left-menu.active {
+		width: 100%;
+		right: 0;
+		-webkit-transition: 0.3s;
+		-moz-transition: 0.3s;
+		transition: 0.3s;		
+	}	
+	
+	.left-menu a.nav-link {
+		font-size: 20px;
+	}
+
+	.left-menu .bottom-cont {
+		position: relative;
+	}
+
+	.left-menu .bottom-cont a.nav-link {
+		padding-left: 21px;
+	}	
+	
+	#changepass {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	
+	.row-mid .border-left {
+		border-left: 0px!important;
+	}
+	
+	#reportrange {
+		width: 100%;
+	}	
+
+}
+
+@media (max-width: 767px) {
+	
+
+}
+
+@media (max-width: 360px) {
+
+
+}
