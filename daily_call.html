@@ -321,24 +321,18 @@
 	
 	
 	function mobile_sync(){
-	
-		
-	
 		var user_id = localStorage.getItem("user_id");
-		
 		alert(user_id);
 	
 		var param = 
             {
                 'user_id' : user_id,
-				'data' : "{call_hdr : 'call_hdr'}"
-				
+				'data' : "{first_name : 'christian',last_name : 'aborde'}"
 			}
 			
-		$.get("https:\\\\corbridge.12symphony.com\\index.php\\Api\\mobile_sync\\", param, 
+		$.get("https:\\\\corbridge.labmatepharma.com\\index.php\\Api\\mobile_sync\\", param, 
 			function(data) {
 				console.log(data);
-				
 				var sst = JSON.stringify(data);
 				alert(sst);
 				
